@@ -7,5 +7,5 @@ class Vehiculo(models.Model):
     _decription = 'Gestión Vehículos'
 
     name = fields.Char(string='Name',required=True, help="Introduzca el nombre", size=20, default="Nuevo")
-    active = fields.Char(string='Active')
+    active = fields.Char(string='Active', default='1')
     matricula = fields.Char('Matricula')
